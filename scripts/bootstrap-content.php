@@ -356,6 +356,7 @@ $privacy_id = cortext_bootstrap_post( array_merge( $common, array(
 
 $post_id = cortext_bootstrap_post( array_merge( $common, array(
 	'post_type'     => 'post',
+	'post_status'   => 'draft',
 	'post_name'     => 'introducing-cortext-0-2',
 	'post_title'    => 'Introducing Cortext 0.2',
 	'post_excerpt'  => 'Mentions, backlinks, formula fields, faster workspaces, and a sturdier desktop app make Cortext 0.2 a much more connected beta.',
