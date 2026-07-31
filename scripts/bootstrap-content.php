@@ -303,7 +303,7 @@ $admins    = get_users( array( 'role' => 'administrator', 'number' => 1, 'fields
 $author_id = $admins ? (int) $admins[0] : 1;
 
 $icon_id      = cortext_bootstrap_media( 'assets/images/icon-dark.png', 'Cortext icon', 'Cortext' );
-$workspace_id = cortext_bootstrap_media( 'assets/images/workspace.jpg', 'Cortext workspace', 'Cortext Library showing nested documents and a product collection in table view' );
+$workspace_id = cortext_bootstrap_media( 'assets/images/workspace.jpg', 'Cortext workspace', 'A Cortext workspace showing nested documents and a product collection as a table' );
 $banner_id    = cortext_bootstrap_media( 'assets/images/banner.png', 'Cortext banner', 'Cortext — Your Digital Brain. Your Rules. Powered by WordPress.' );
 
 $home_content = cortext_bootstrap_read( 'content/home.html' );
