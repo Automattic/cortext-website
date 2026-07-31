@@ -1,0 +1,33 @@
+<!-- wp:template-part {"slug":"header","tagName":"header","className":"site-header"} /-->
+
+<!-- wp:group {"tagName":"main","anchor":"main","align":"full","className":"site-main","layout":{"type":"default"}} -->
+<main id="main" class="wp-block-group alignfull site-main">
+	<!-- wp:group {"align":"full","className":"page-hero","layout":{"type":"constrained"}} -->
+	<div class="wp-block-group alignfull page-hero">
+		<!-- wp:heading {"level":1,"align":"wide"} -->
+		<h1 class="wp-block-heading alignwide">Cortext</h1>
+		<!-- /wp:heading -->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:group {"align":"full","className":"archive-posts","layout":{"type":"constrained"}} -->
+	<div class="wp-block-group alignfull archive-posts">
+		<!-- wp:query {"queryId":13,"query":{"inherit":true},"align":"wide","className":"post-grid"} -->
+		<div class="wp-block-query alignwide post-grid">
+			<!-- wp:post-template -->
+				<!-- wp:group {"className":"post-card","layout":{"type":"constrained"}} -->
+				<div class="wp-block-group post-card">
+					<!-- wp:post-date {"format":"F j, Y"} /-->
+					<!-- wp:post-title {"isLink":true,"level":2} /-->
+					<!-- wp:post-excerpt {"moreText":"Read more"} /-->
+				</div>
+				<!-- /wp:group -->
+			<!-- /wp:post-template -->
+		</div>
+		<!-- /wp:query -->
+	</div>
+	<!-- /wp:group -->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer","className":"site-footer"} /-->

@@ -1,0 +1,7 @@
+.git/
+.github/
+.deployignore
+.gitignore
+content/
+scripts/
+README.md

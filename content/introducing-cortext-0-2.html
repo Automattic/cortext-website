@@ -1,0 +1,82 @@
+<!-- wp:paragraph -->
+<p>Knowledge has a habit of spreading. Notes end up in documents, projects in tables, decisions in chat, and the useful links between them depend on somebody remembering where to look.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Cortext is our attempt to put writing and structure in the same workspace while keeping the underlying data open. Version 0.2 makes those parts feel much more connected.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Why “Cortext”?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The name combines <em>cortex</em> and <em>text</em>. Text is the durable part: notes, records, and decisions that you can read and revise. Cortex points to the connections around them. “Digital brain” is a working metaphor for connected knowledge, not a claim that the cerebral cortex is literally where memory lives.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Underneath the interface, that knowledge remains WordPress content. Documents and collection records use posts and metadata, so the data can be inspected, exported, and hosted on infrastructure you choose.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">What changed in 0.2</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>This release adds the connections and calculated fields that were missing from the first beta, then does a fair amount of work behind the scenes to keep larger workspaces responsive.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Mentions and backlinks</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>You can mention another document while writing and open it from the editor. Cortext records that reference as a backlink on the mentioned document, so the trail works in both directions.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Formula fields</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Collections can now calculate values from their other fields. A formula can turn raw dates, numbers, and text into a result that stays with the record and appears in its views.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Less waiting in larger workspaces</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The sidebar tree now loads pages only when they are needed and paginates long lists. Collection rows can use a smaller, ID-only response, and table footer totals are calculated on the server. These changes reduce the amount of data the browser has to fetch and process.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">A sturdier desktop app</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The desktop app can update itself, authenticates requests to its local runtime, and gives each profile a separate runtime origin. The packaged app is more tightly locked down and tested. Its snapshot and runtime no longer depend on POSIX tools, and the snapshot now builds on Windows as well as macOS. The macOS disk image is signed and notarized.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The full list, including links to every merged change, is in the <a href="https://github.com/Automattic/cortext/releases/tag/0.2.0" target="_blank" rel="noreferrer noopener">Cortext 0.2.0 release notes</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">What beta means here</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Cortext is usable, but its data model and interface are still changing. Try it in a temporary Playground or on a test site first. If you use it with material that matters, keep a current backup and read the release notes before upgrading.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons">
+	<!-- wp:button -->
+	<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/cortext/main/assets/wordpress-org/blueprints/blueprint.json" target="_blank" rel="noreferrer noopener">Try Cortext 0.2</a></div>
+	<!-- /wp:button -->
+	<!-- wp:button {"className":"is-style-outline"} -->
+	<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="https://github.com/Automattic/cortext" target="_blank" rel="noreferrer noopener">Follow the project on GitHub</a></div>
+	<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
