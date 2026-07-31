@@ -251,11 +251,6 @@ a:hover {
 	padding-top: clamp(4.5rem, 10vw, 8rem);
 }
 
-.section-shell--compact {
-	padding-bottom: clamp(3rem, 7vw, 5rem);
-	padding-top: clamp(3rem, 7vw, 5rem);
-}
-
 .section-intro {
 	margin-bottom: clamp(2rem, 5vw, 4rem);
 	max-width: 760px;
@@ -544,38 +539,6 @@ a:hover {
 
 .text-link::after {
 	content: " →";
-}
-
-.beta-banner {
-	background: rgb(11 28 51 / 78%);
-	border: 1px solid rgb(112 240 194 / 30%);
-	border-radius: 18px;
-	gap: 1.25rem !important;
-	padding: clamp(1.4rem, 4vw, 2.25rem);
-}
-
-.beta-banner__label {
-	background: rgb(112 240 194 / 12%);
-	border: 1px solid rgb(112 240 194 / 35%);
-	border-radius: 999px;
-	color: #70f0c2;
-	flex-shrink: 0;
-	font-family: var(--wp--preset--font-family--system-mono);
-	font-size: 0.72rem;
-	font-weight: 760;
-	letter-spacing: 0.08em;
-	padding: 0.42rem 0.7rem;
-	text-transform: uppercase;
-}
-
-.beta-banner h2 {
-	font-size: clamp(1.35rem, 3vw, 1.8rem);
-	margin-bottom: 0.35rem;
-}
-
-.beta-banner p {
-	color: #b8c9dc;
-	margin: 0;
 }
 
 .final-cta {
@@ -999,11 +962,6 @@ a:hover {
 		margin-left: auto;
 		margin-right: auto;
 		max-width: 150px;
-	}
-
-	.beta-banner {
-		align-items: flex-start !important;
-		flex-direction: column;
 	}
 
 	.archive-posts .wp-block-post-template {
