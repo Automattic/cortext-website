@@ -18,8 +18,8 @@
 	<!-- wp:column {"verticalAlignment":"center","width":"70%"} -->
 	<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:70%">
 		<!-- wp:paragraph {"className":"eyebrow"} --><p class="eyebrow">Open by design</p><!-- /wp:paragraph -->
-		<!-- wp:heading --><h2 class="wp-block-heading">Your knowledge should outlive the tool.</h2><!-- /wp:heading -->
-		<!-- wp:paragraph --><p>Cortext is open-source and stores its content as WordPress posts and metadata. You can run it on infrastructure you control, inspect the code, and take your data with you.</p><!-- /wp:paragraph -->
+		<!-- wp:heading --><h2 class="wp-block-heading">Your knowledge stays yours.</h2><!-- /wp:heading -->
+		<!-- wp:paragraph --><p>Cortext stores its content as WordPress posts and metadata. You can inspect the code, run it on infrastructure you control, and take your data with you.</p><!-- /wp:paragraph -->
 		<!-- wp:paragraph --><p><a class="text-link" href="https://github.com/Automattic/cortext" target="_blank" rel="noreferrer noopener">Read the source on GitHub</a></p><!-- /wp:paragraph -->
 	</div>
 	<!-- /wp:column -->

@@ -20,7 +20,7 @@
 		<h1 class="wp-block-heading">Think in text. Build your digital brain.</h1>
 		<!-- /wp:heading -->
 		<!-- wp:paragraph {"className":"cortext-hero__subtitle"} -->
-		<p class="cortext-hero__subtitle">Cortext brings documents, structured collections, connected records, and flexible views into one focused workspace.</p>
+		<p class="cortext-hero__subtitle">Cortext is an open-source workspace for connected knowledge, built on one idea: your knowledge should outlive the tool.</p>
 		<!-- /wp:paragraph -->
 		<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
 		<div class="wp-block-buttons">
