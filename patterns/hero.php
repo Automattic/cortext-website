@@ -28,7 +28,7 @@
 			<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#product">See how Cortext works</a></div>
 			<!-- /wp:button -->
 			<!-- wp:button {"className":"is-style-outline"} -->
-			<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/cortext/main/assets/wordpress-org/blueprints/blueprint.json" target="_blank" rel="noreferrer noopener">Try the beta</a></div>
+			<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/cortext/main/assets/wordpress-org/blueprints/blueprint.json" target="_blank" rel="noreferrer noopener">Try the demo</a></div>
 			<!-- /wp:button -->
 		</div>
 		<!-- /wp:buttons -->

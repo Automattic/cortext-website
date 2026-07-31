@@ -234,7 +234,7 @@ function cortext_bootstrap_navigation( $blog_page_id ) {
 			'xfn'     => 'noopener noreferrer',
 		),
 		'playground' => array(
-			'title'   => 'Try the beta',
+			'title'   => 'Try the demo',
 			'url'     => 'https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/cortext/main/assets/wordpress-org/blueprints/blueprint.json',
 			'target'  => '_blank',
 			'classes' => 'nav-cta',

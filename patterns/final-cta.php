@@ -13,7 +13,7 @@
 	<!-- wp:paragraph --><p>Open a temporary WordPress Playground in your browser, or visit GitHub to follow the project and run it yourself.</p><!-- /wp:paragraph -->
 	<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
 	<div class="wp-block-buttons">
-		<!-- wp:button --><div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/cortext/main/assets/wordpress-org/blueprints/blueprint.json" target="_blank" rel="noreferrer noopener">Try the beta</a></div><!-- /wp:button -->
+		<!-- wp:button --><div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Automattic/cortext/main/assets/wordpress-org/blueprints/blueprint.json" target="_blank" rel="noreferrer noopener">Try the demo</a></div><!-- /wp:button -->
 		<!-- wp:button {"className":"is-style-outline"} --><div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="https://github.com/Automattic/cortext" target="_blank" rel="noreferrer noopener">View on GitHub</a></div><!-- /wp:button -->
 	</div>
 	<!-- /wp:buttons -->
