@@ -493,13 +493,21 @@ a:hover {
 	font-size: 0.78rem;
 	font-weight: 760;
 	letter-spacing: 0.1em;
-	margin-bottom: auto;
+}
+
+/* The constrained layout gives every child auto side margins, which centres
+   any child narrower than the card. In a flex column that only shows on the
+   short ones, so the number floated while the rest stayed left. */
+.feature-card > * {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
 }
 
 .feature-card h3 {
-	font-size: clamp(1.4rem, 2.2vw, 1.8rem);
+	font-size: clamp(1.2rem, 1.55vw, 1.45rem);
 	margin-bottom: 1rem;
-	margin-top: 3rem;
+	margin-top: 1.75rem;
+	text-wrap: balance;
 }
 
 .feature-card p:last-child {
@@ -531,6 +539,16 @@ a:hover {
 
 .ownership-panel p {
 	color: #b8c9dc;
+}
+
+/* Links inside a paragraph carry only a hue difference against the body text
+   (1.14:1), which fails WCAG 1.4.1. Underline them; standalone .text-link
+   actions keep their weight and arrow instead. */
+.ownership-panel p a:not(.text-link),
+.site-footer__bottom a,
+.reading-width p a {
+	text-decoration: underline;
+	text-underline-offset: 0.18em;
 }
 
 .text-link {

@@ -101,7 +101,7 @@ function cortext_website_meta_description() {
 	}
 
 	if ( is_front_page() ) {
-		return 'Cortext is an open-source workspace for documents, structured collections, connected records, and flexible views.';
+		return 'An open-source knowledge workspace with nested pages, typed collections, relations and rollups. Built on WordPress.';
 	}
 
 	if ( is_home() ) {
@@ -170,9 +170,10 @@ function cortext_website_head_metadata() {
 	$canonical   = cortext_website_canonical_url();
 	$title       = wp_get_document_title();
 	$type        = is_single() ? 'article' : 'website';
-	$image       = is_singular() && has_post_thumbnail()
+	$has_thumbnail = is_singular() && has_post_thumbnail();
+	$image         = $has_thumbnail
 		? get_the_post_thumbnail_url( null, 'full' )
-		: get_theme_file_uri( 'assets/images/banner.png' );
+		: get_theme_file_uri( 'assets/images/banner.jpg' );
 
 	if ( $canonical ) {
 		printf( "\n<link rel=\"canonical\" href=\"%s\" />\n", esc_url( $canonical ) );
@@ -187,7 +188,21 @@ function cortext_website_head_metadata() {
 		printf( '<meta property="og:url" content="%s" />' . "\n", esc_url( $canonical ) );
 	}
 	printf( '<meta property="og:image" content="%s" />' . "\n", esc_url( $image ) );
+
+	// The share card ships at a fixed size. Declaring it saves scrapers a fetch
+	// and stops them guessing a crop.
+	if ( ! $has_thumbnail ) {
+		echo '<meta property="og:image:width" content="1200" />' . "\n";
+		echo '<meta property="og:image:height" content="630" />' . "\n";
+		printf( '<meta property="og:image:alt" content="%s" />' . "\n", esc_attr( get_bloginfo( 'name' ) ) );
+	}
+
 	echo '<meta name="twitter:card" content="summary_large_image" />' . "\n";
 }
 remove_action( 'wp_head', 'rel_canonical' );
 add_action( 'wp_head', 'cortext_website_head_metadata', 2 );
+
+// Jetpack ships its own Open Graph and SEO tags, which would duplicate every tag
+// above and leave scrapers to pick between two different titles and images.
+add_filter( 'jetpack_enable_open_graph', '__return_false' );
+add_filter( 'jetpack_seo_meta_tags_enabled', '__return_false' );
