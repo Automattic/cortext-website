@@ -10,7 +10,7 @@
 <div class="wp-block-columns alignwide feature-grid">
 	<!-- wp:column -->
 	<div class="wp-block-column">
-		<!-- wp:group {"className":"feature-card","layout":{"type":"constrained"}} -->
+		<!-- wp:group {"className":"feature-card"} -->
 		<div class="wp-block-group feature-card">
 			<!-- wp:paragraph {"className":"feature-number"} --><p class="feature-number">01 / PAGES</p><!-- /wp:paragraph -->
 			<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Nest pages as deep as the work goes.</h3><!-- /wp:heading -->
@@ -22,7 +22,7 @@
 
 	<!-- wp:column -->
 	<div class="wp-block-column">
-		<!-- wp:group {"className":"feature-card","layout":{"type":"constrained"}} -->
+		<!-- wp:group {"className":"feature-card"} -->
 		<div class="wp-block-group feature-card">
 			<!-- wp:paragraph {"className":"feature-number"} --><p class="feature-number">02 / COLLECTIONS</p><!-- /wp:paragraph -->
 			<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Every field knows what it holds.</h3><!-- /wp:heading -->
@@ -34,7 +34,7 @@
 
 	<!-- wp:column -->
 	<div class="wp-block-column">
-		<!-- wp:group {"className":"feature-card","layout":{"type":"constrained"}} -->
+		<!-- wp:group {"className":"feature-card"} -->
 		<div class="wp-block-group feature-card">
 			<!-- wp:paragraph {"className":"feature-number"} --><p class="feature-number">03 / CONNECTIONS</p><!-- /wp:paragraph -->
 			<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Link two pages once. Both of them know.</h3><!-- /wp:heading -->
@@ -46,7 +46,7 @@
 
 	<!-- wp:column -->
 	<div class="wp-block-column">
-		<!-- wp:group {"className":"feature-card","layout":{"type":"constrained"}} -->
+		<!-- wp:group {"className":"feature-card"} -->
 		<div class="wp-block-group feature-card">
 			<!-- wp:paragraph {"className":"feature-number"} --><p class="feature-number">04 / OWNERSHIP</p><!-- /wp:paragraph -->
 			<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Publish a page. The rest stays closed.</h3><!-- /wp:heading -->
