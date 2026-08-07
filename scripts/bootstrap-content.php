@@ -304,7 +304,7 @@ $author_id = $admins ? (int) $admins[0] : 1;
 
 $icon_id      = cortext_bootstrap_media( 'assets/images/icon-dark.png', 'Cortext icon', 'Cortext' );
 $workspace_id = cortext_bootstrap_media( 'assets/images/workspace.jpg', 'Cortext workspace', 'A Cortext workspace showing nested documents and a product collection as a table' );
-$banner_id    = cortext_bootstrap_media( 'assets/images/banner.png', 'Cortext banner', 'Cortext — Your Digital Brain. Your Rules. Powered by WordPress.' );
+$banner_id    = cortext_bootstrap_media( 'assets/images/banner.jpg', 'Cortext banner', 'Cortext — Your Digital Brain. Your Rules. Powered by WordPress.' );
 
 $home_content = cortext_bootstrap_read( 'content/home.html' );
 $home_content = strtr(
@@ -346,11 +346,19 @@ $blog_id = cortext_bootstrap_post( array_merge( $common, array(
 	'post_content' => '',
 ) ) );
 
+$download_id = cortext_bootstrap_post( array_merge( $common, array(
+	'post_type'    => 'page',
+	'post_name'    => 'download',
+	'post_title'   => 'Get Cortext',
+	'post_excerpt' => 'Three ways to run it: in your browser, on a WordPress site you already have, or as a Mac app.',
+	'post_content' => cortext_bootstrap_read( 'content/download.html' ),
+) ) );
+
 $privacy_id = cortext_bootstrap_post( array_merge( $common, array(
 	'post_type'    => 'page',
 	'post_name'    => 'privacy',
 	'post_title'   => 'Privacy',
-	'post_excerpt' => 'How cortext.digital and its WordPress.com hosting handle visitor information.',
+	'post_excerpt' => 'What cortext.digital records about visitors, and what the Cortext software does not.',
 	'post_content' => cortext_bootstrap_read( 'content/privacy.html' ),
 ) ) );
 
@@ -369,7 +377,7 @@ set_post_thumbnail( $post_id, $banner_id );
 set_theme_mod( 'custom_logo', $icon_id );
 
 update_option( 'blogname', 'Cortext' );
-update_option( 'blogdescription', 'Own and connect your knowledge.' );
+update_option( 'blogdescription', 'Your knowledge should outlive the tool.' );
 update_option( 'WPLANG', '' );
 update_option( 'timezone_string', 'Europe/Madrid' );
 update_option( 'show_on_front', 'page' );
@@ -391,6 +399,7 @@ WP_CLI::log( 'Public routes:' );
 WP_CLI::log( home_url( '/' ) );
 WP_CLI::log( get_permalink( $blog_id ) );
 WP_CLI::log( get_permalink( $post_id ) );
+WP_CLI::log( get_permalink( $download_id ) );
 WP_CLI::log( get_permalink( $privacy_id ) );
 WP_CLI::log( get_feed_link() );
 WP_CLI::success( sprintf( 'Cortext website bootstrap %s complete.', CORTEXT_BOOTSTRAP_VERSION ) );

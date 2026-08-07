@@ -12,9 +12,9 @@
 	<div class="wp-block-column">
 		<!-- wp:group {"className":"feature-card","layout":{"type":"constrained"}} -->
 		<div class="wp-block-group feature-card">
-			<!-- wp:paragraph {"className":"feature-number"} --><p class="feature-number">01 / DOCUMENTS</p><!-- /wp:paragraph -->
-			<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Start with a document. Go as deep as you need.</h3><!-- /wp:heading -->
-			<!-- wp:paragraph --><p>Keep pages in a visible tree, nest them without a fixed depth, and move through a project without losing your place.</p><!-- /wp:paragraph -->
+			<!-- wp:paragraph {"className":"feature-number"} --><p class="feature-number">01 / PAGES</p><!-- /wp:paragraph -->
+			<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Nest pages as deep as the work goes.</h3><!-- /wp:heading -->
+			<!-- wp:paragraph --><p>Each one can hang off another in a sidebar tree, with no fixed depth. Drag to rearrange.</p><!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
 	</div>
@@ -25,8 +25,8 @@
 		<!-- wp:group {"className":"feature-card","layout":{"type":"constrained"}} -->
 		<div class="wp-block-group feature-card">
 			<!-- wp:paragraph {"className":"feature-number"} --><p class="feature-number">02 / COLLECTIONS</p><!-- /wp:paragraph -->
-			<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Give repeated information a useful shape.</h3><!-- /wp:heading -->
-			<!-- wp:paragraph --><p>Add typed fields, filter and sort the same records in different views, and calculate what you need with formulas.</p><!-- /wp:paragraph -->
+			<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Every field knows what it holds.</h3><!-- /wp:heading -->
+			<!-- wp:paragraph --><p>Twelve types, from dates and numbers to formulas. Column totals sit at the bottom of the table.</p><!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
 	</div>
@@ -37,8 +37,8 @@
 		<!-- wp:group {"className":"feature-card","layout":{"type":"constrained"}} -->
 		<div class="wp-block-group feature-card">
 			<!-- wp:paragraph {"className":"feature-number"} --><p class="feature-number">03 / CONNECTIONS</p><!-- /wp:paragraph -->
-			<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Follow an idea in both directions.</h3><!-- /wp:heading -->
-			<!-- wp:paragraph --><p>Link records, summarize related data with rollups, mention another page while writing, and see every backlink in one place.</p><!-- /wp:paragraph -->
+			<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Link two pages once. Both of them know.</h3><!-- /wp:heading -->
+			<!-- wp:paragraph --><p>A relation field makes its own reverse on the other collection, so nobody maintains the mirror by hand. Rollups total whatever it points at, and typing @ leaves a backlink on the page you mentioned.</p><!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
 	</div>
@@ -49,8 +49,8 @@
 		<!-- wp:group {"className":"feature-card","layout":{"type":"constrained"}} -->
 		<div class="wp-block-group feature-card">
 			<!-- wp:paragraph {"className":"feature-number"} --><p class="feature-number">04 / OWNERSHIP</p><!-- /wp:paragraph -->
-			<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Publish when it helps. Keep the source.</h3><!-- /wp:heading -->
-			<!-- wp:paragraph --><p>Choose what stays private and what goes public. Your content remains ordinary WordPress data that you can host, inspect, and export.</p><!-- /wp:paragraph -->
+			<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Publish a page. The rest stays closed.</h3><!-- /wp:heading -->
+			<!-- wp:paragraph --><p>No archive, no feed, nothing in your site search. A page gets a public URL when you publish it, and unpublishing takes it straight back.</p><!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
 	</div>
