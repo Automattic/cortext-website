@@ -6,7 +6,7 @@ The dependency-free WordPress block theme for [cortext.digital](https://cortext.
 
 - `theme.json`, `style.css`, and `functions.php` define the design system and public metadata.
 - `templates/`, `parts/`, and `patterns/` contain the versioned block theme.
-- `content/` and `scripts/bootstrap-content.php` hold the initial editorial copy and local bootstrap. Neither belongs on the server. See Deployment for what to check after a push.
+- `content/` and `scripts/bootstrap-content.php` hold the initial editorial copy and local bootstrap. `.deployignore` keeps both off the server.
 - `assets/images/` contains the Cortext icon, product screenshot, and social banner.
 
 There is no JavaScript dependency, package manager, or build step.
@@ -50,7 +50,7 @@ studio push --remote-site https://cortext.digital --options themes
 
 The initial launch also ran `--options sqls,uploads` to carry the database and media across. That one replaces the whole database, so it is not for routine updates.
 
-`.deployignore` is a GitHub Deployments file and has no effect on a Studio push. After deploying, check that the unpublished release post did not travel with it:
+`.deployignore` is honoured, so `content/`, `scripts/` and `README.md` stay off the server. Check it anyway after a push, because the unpublished release post lives in `content/`:
 
 ```sh
 curl -s -o /dev/null -w "%{http_code}\n" \
@@ -58,6 +58,8 @@ curl -s -o /dev/null -w "%{http_code}\n" \
 ```
 
 404 is correct. A 200 means the draft is readable at a direct URL.
+
+A push adds and overwrites; it never deletes. A file removed from the repo stays on the server until someone removes it there.
 
 Content is edited on WordPress.com directly. Do not edit theme templates or Global Styles in the production Site Editor; database overrides would take precedence over these versioned files.
 
