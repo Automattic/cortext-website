@@ -993,6 +993,19 @@ a:hover {
 	}
 }
 
+/* The brand plus five items need 611px, and the container gives that back at
+   about 664px of viewport. The navigation block would otherwise wait until 600
+   and spend the gap wrapping onto a second line. */
+@media (max-width: 700px) {
+	.primary-navigation .wp-block-navigation__responsive-container-open:not(.always-shown) {
+		display: flex;
+	}
+
+	.primary-navigation .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+		display: none;
+	}
+}
+
 @media (max-width: 560px) {
 	.site-brand .wp-block-site-title {
 		font-size: 1.05rem;
