@@ -725,16 +725,10 @@ a:hover {
 	text-transform: uppercase;
 }
 
-.entry-header .wp-block-post-title {
-	max-width: 1100px !important;
-	width: 100%;
-}
-
 .entry-header .wp-block-post-excerpt {
 	color: #b8c9dc;
 	font-size: clamp(1.1rem, 2.2vw, 1.4rem);
 	line-height: 1.6;
-	max-width: 720px;
 }
 
 .entry-featured-image {
