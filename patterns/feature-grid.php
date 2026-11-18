@@ -13,8 +13,8 @@
 		<!-- wp:group {"className":"feature-card"} -->
 		<div class="wp-block-group feature-card">
 			<!-- wp:paragraph {"className":"feature-number"} --><p class="feature-number">01 / PAGES</p><!-- /wp:paragraph -->
-			<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Nest pages as deep as the work goes.</h3><!-- /wp:heading -->
-			<!-- wp:paragraph --><p>Each one can hang off another in a sidebar tree, with no fixed depth. Drag to rearrange.</p><!-- /wp:paragraph -->
+			<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Nest pages as deep as you need.</h3><!-- /wp:heading -->
+			<!-- wp:paragraph --><p>Pages live in a sidebar tree with no depth limit. Drag them to reorder or move them.</p><!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
 	</div>
@@ -25,8 +25,8 @@
 		<!-- wp:group {"className":"feature-card"} -->
 		<div class="wp-block-group feature-card">
 			<!-- wp:paragraph {"className":"feature-number"} --><p class="feature-number">02 / COLLECTIONS</p><!-- /wp:paragraph -->
-			<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Every field knows what it holds.</h3><!-- /wp:heading -->
-			<!-- wp:paragraph --><p>Twelve types, from dates and numbers to formulas. Column totals sit at the bottom of the table.</p><!-- /wp:paragraph -->
+			<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Sort, filter and calculate by field.</h3><!-- /wp:heading -->
+			<!-- wp:paragraph --><p>Text, numbers, dates, selects, relations, formulas and more. Column totals show at the bottom of the table.</p><!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
 	</div>
@@ -37,8 +37,8 @@
 		<!-- wp:group {"className":"feature-card"} -->
 		<div class="wp-block-group feature-card">
 			<!-- wp:paragraph {"className":"feature-number"} --><p class="feature-number">03 / CONNECTIONS</p><!-- /wp:paragraph -->
-			<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Link two pages once. Both of them know.</h3><!-- /wp:heading -->
-			<!-- wp:paragraph --><p>A relation field makes its own reverse on the other collection, so nobody maintains the mirror by hand. Rollups total whatever it points at, and typing @ leaves a backlink on the page you mentioned.</p><!-- /wp:paragraph -->
+			<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Relations work both ways.</h3><!-- /wp:heading -->
+			<!-- wp:paragraph --><p>Link a row to another collection and the reverse link appears there too. Rollups calculate values from linked rows, and typing @ adds a backlink on the page you mention.</p><!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
 	</div>
@@ -48,9 +48,9 @@
 	<div class="wp-block-column">
 		<!-- wp:group {"className":"feature-card"} -->
 		<div class="wp-block-group feature-card">
-			<!-- wp:paragraph {"className":"feature-number"} --><p class="feature-number">04 / OWNERSHIP</p><!-- /wp:paragraph -->
-			<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Publish a page. The rest stays closed.</h3><!-- /wp:heading -->
-			<!-- wp:paragraph --><p>No archive, no feed, nothing in your site search. A page gets a public URL when you publish it, and unpublishing takes it straight back.</p><!-- /wp:paragraph -->
+			<!-- wp:paragraph {"className":"feature-number"} --><p class="feature-number">04 / PUBLISHING</p><!-- /wp:paragraph -->
+			<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">Only what you publish is public.</h3><!-- /wp:heading -->
+			<!-- wp:paragraph --><p>Pages are private by default and stay out of archives, feeds and site search. Publishing gives a page a public URL; unpublishing takes it down.</p><!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
 	</div>
